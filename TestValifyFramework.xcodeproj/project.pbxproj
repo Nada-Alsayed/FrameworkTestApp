@@ -16,6 +16,8 @@
 		21A3043D2CC0ED7900A0A719 /* TestValifyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3043C2CC0ED7900A0A719 /* TestValifyFrameworkTests.swift */; };
 		21A304472CC0ED7900A0A719 /* TestValifyFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A304462CC0ED7900A0A719 /* TestValifyFrameworkUITests.swift */; };
 		21A304492CC0ED7900A0A719 /* TestValifyFrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A304482CC0ED7900A0A719 /* TestValifyFrameworkUITestsLaunchTests.swift */; };
+		21A304912CC1532E00A0A719 /* ValifyFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A3048F2CC1532500A0A719 /* ValifyFrameWork.framework */; };
+		21A304922CC1532E00A0A719 /* ValifyFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21A3048F2CC1532500A0A719 /* ValifyFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		21A304592CC0EF5200A0A719 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21A304922CC1532E00A0A719 /* ValifyFrameWork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		21A304222CC0ED7700A0A719 /* TestValifyFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestValifyFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A304252CC0ED7700A0A719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		21A304422CC0ED7900A0A719 /* TestValifyFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestValifyFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A304462CC0ED7900A0A719 /* TestValifyFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestValifyFrameworkUITests.swift; sourceTree = "<group>"; };
 		21A304482CC0ED7900A0A719 /* TestValifyFrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestValifyFrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21A3048F2CC1532500A0A719 /* ValifyFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ValifyFrameWork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A304912CC1532E00A0A719 /* ValifyFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +117,7 @@
 		21A304242CC0ED7700A0A719 /* TestValifyFramework */ = {
 			isa = PBXGroup;
 			children = (
+				21A3048F2CC1532500A0A719 /* ValifyFrameWork.framework */,
 				21A304252CC0ED7700A0A719 /* AppDelegate.swift */,
 				21A304272CC0ED7700A0A719 /* SceneDelegate.swift */,
 				21A304292CC0ED7700A0A719 /* ViewController.swift */,
@@ -137,6 +156,7 @@
 				21A3041E2CC0ED7700A0A719 /* Sources */,
 				21A3041F2CC0ED7700A0A719 /* Frameworks */,
 				21A304202CC0ED7700A0A719 /* Resources */,
+				21A304592CC0EF5200A0A719 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,6 +463,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86K529XC8F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestValifyFramework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestValifyFramework/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,6 +474,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +496,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86K529XC8F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestValifyFramework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestValifyFramework/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,6 +507,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
